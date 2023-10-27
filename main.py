@@ -10,7 +10,7 @@ class Options(ChromeOptions):
         self.headless: bool = False
 
 
-# Paste hear yor search request
+# Paste here yor search request
 search = "вентиляторы напольные"
 driver = undetected_chromedriver.Chrome(options=Options())
 driver.get('https://www.wildberries.ru/catalog/0/search.aspx?search=' + '%20'.join(search.split()))
